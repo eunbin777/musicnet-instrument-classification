@@ -9,6 +9,7 @@ import torch.nn as nn
 ensemble_to_instruments = {
     "Piano Quintet": ["Piano", "Violin", "Viola", "Cello"],
     "Solo Piano": ["Piano"],
+    "Solo Cello" : ["Cello"],
     "Piano Trio": ["Piano", "Violin", "Cello"],
     "Viola Quintet": ["Violin", "Viola", "Cello"],
     "String Quartet": ["Violin", "Viola", "Cello"],
