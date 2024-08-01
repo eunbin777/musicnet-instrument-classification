@@ -1,0 +1,4 @@
+torch
+librosa
+efficientnet_pytorch
+gradio
