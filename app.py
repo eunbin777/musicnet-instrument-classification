@@ -66,7 +66,7 @@ def classify_audio(file):
     return ', '.join(instrument_labels)
 
 iface = gr.Interface(fn=classify_audio, 
-                     inputs=gr.Audio(source="upload", type="filepath"), 
+                     inputs=gr.Audio(type="filepath"), 
                      outputs="text",
                      live=True,
                      title="Music Instrument Recognition",
