@@ -1,6 +1,7 @@
 
 import torch
 import librosa
+import numpy as np
 import gradio as gr
 from efficientnet_pytorch import EfficientNet
 import torch.nn as nn
@@ -51,7 +52,7 @@ class EfficientNetClassifier(nn.Module):
 
 num_classes = len(unique_instruments)
 model = EfficientNetClassifier(num_classes=num_classes, in_channels=1)
-model.load_state_dict(torch.load('best_model.pth'))
+model.load_state_dict(torch.load('best_model.pth', weights_only=True))
 model.eval()
 
 def classify_audio(file):
